@@ -11,7 +11,7 @@ import os
 frontend_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'frontend')
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app)
 
 # MongoDB connection
 client = MongoClient('mongodb+srv://abbas:Abbas111@cluster0.c2lmxxc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
